@@ -166,4 +166,43 @@ footer{
     background-color: darkslateblue;
     color: aliceblue;
 }
+@media only screen and (max-width:688px) {
+    
+    .container{
+        width: 100%;
+    }
+    .banner-left{
+        order: 2;
+    }
+    .banner-left h1{
+        font-size: 30px;
+    }
+    .banner-left p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .features,.galaries,.contact,.banner{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media only screen and (min-width:688px) and (max-width:920px) {
+    
+    .container{
+        width: 100%;
+    }
+    
+    .banner-left h1{
+        font-size: 30px;
+    }
+    .banner-left p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    header{
+        height: 38vh;
+    }
+    .features,.galaries,.contact,.banner{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
 
